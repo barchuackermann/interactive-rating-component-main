@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/css/style.css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+  <main>
+    <div class="rating-state" id="rating-state">
+      <div class="rating-state__text">
+        <div class="img-container">
+          <img src="./src/images/icon-star.svg" alt="">
+        </div>
+        <h4>
+          How did we do?
+        </h4>
+        <p>
+          Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!
+        </p>
+      </div>
+      <div class="rating-state__options">
+        <ul>
+          <li class="option" id="op1">1</li>
+          <li class="option" id="op2">2</li>
+          <li class="option" id="op3">3</li>
+          <li class="option" id="op4">4</li>
+          <li class="option" id="op5">5</li>
+        </ul>
+      </div>
+      <button class="submitBtn" id="submitBtn" type="button">Submit</button>
+    </div>
+  
+    <div class="thanks-state d-none" id="thanks-state">
+      <div class="thanks-state__img">
+        <img src="./src/images/illustration-thank-you.svg" alt="">
+      </div>
+      <p class="thanks-state__rate">You selected <span id="finalOption"></span> out of 5</p>
+      <div class="thanks-state__text">
+        <h4>Thank You!</h4>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by 
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"></a>
+        Frontend Mentor</a
+      > coded by
+      <a
+        class="barchu"
+        href="https://www.linkedin.com/in/barchuackermann/"
+        target="_blank"
+        >BarchuAckermann</a
+      >
+    </div>
+  </footer>
+</body>
+<script src="./src/js/index.js"></script>
+</html>
